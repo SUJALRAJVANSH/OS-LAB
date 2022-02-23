@@ -1,0 +1,460 @@
+sujal@ubuntu:~$ cd Desktop
+sujal@ubuntu:~/Desktop$ mkdir test
+sujal@ubuntu:~/Desktop$ vi first.c
+
+[1]+  Stopped                 vi first.c
+sujal@ubuntu:~/Desktop$ vi first.c
+sujal@ubuntu:~/Desktop$ gcc first.c
+first.c:5:2: error: expected identifier or ‘(’ before ‘return’
+    5 | }return 0 ;
+      |  ^~~~~~
+sujal@ubuntu:~/Desktop$ vi first.c
+sujal@ubuntu:~/Desktop$ gcc first.c
+first.c:8:3: error: expected ‘;’ before ‘typedef’
+    8 |  D
+      |   ^
+      |   ;
+sujal@ubuntu:~/Desktop$ vi first.c
+sujal@ubuntu:~/Desktop$ gcc first.c
+sujal@ubuntu:~/Desktop$ ./a.out
+welcome to linuxsujal@ubuntu:~/Desktop$ vi first.sh
+sujal@ubuntu:~/Desktop$ sh first.sh
+a.out  first.c	first.sh  test
+sujal@ubuntu:~/Desktop$ vi first.py
+sujal@ubuntu:~/Desktop$ python3 first.py
+welcome
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ javac first.c
+
+Command 'javac' not found, but can be installed with:
+
+sudo apt install openjdk-11-jdk-headless  # version 11.0.13+8-0ubuntu1~20.04, or
+sudo apt install default-jdk              # version 2:1.11-72
+sudo apt install ecj                      # version 3.16.0-1
+sudo apt install openjdk-16-jdk-headless  # version 16.0.1+9-1~20.04
+sudo apt install openjdk-17-jdk-headless  # version 17.0.1+12-1~20.04
+sudo apt install openjdk-8-jdk-headless   # version 8u312-b07-0ubuntu1~20.04
+sudo apt install openjdk-13-jdk-headless  # version 13.0.7+5-0ubuntu1~20.04
+
+sujal@ubuntu:~/Desktop$ sudo apt install openjdk-13-headless
+[sudo] password for sujal: 
+
+Sorry, try again.
+[sudo] password for sujal: 
+Sorry, try again.
+[sudo] password for sujal: 
+sudo: 3 incorrect password attempts
+sujal@ubuntu:~/Desktop$ sudo apt install openjdk-13-headless
+[sudo] password for sujal: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+E: Unable to locate package openjdk-13-headless
+sujal@ubuntu:~/Desktop$ javac first.java
+
+Command 'javac' not found, but can be installed with:
+
+sudo apt install openjdk-11-jdk-headless  # version 11.0.13+8-0ubuntu1~20.04, or
+sudo apt install default-jdk              # version 2:1.11-72
+sudo apt install ecj                      # version 3.16.0-1
+sudo apt install openjdk-16-jdk-headless  # version 16.0.1+9-1~20.04
+sudo apt install openjdk-17-jdk-headless  # version 17.0.1+12-1~20.04
+sudo apt install openjdk-8-jdk-headless   # version 8u312-b07-0ubuntu1~20.04
+sudo apt install openjdk-13-jdk-headless  # version 13.0.7+5-0ubuntu1~20.04
+
+sujal@ubuntu:~/Desktop$ sudo apt install openjdk-16-jdk-headless
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  linux-headers-5.11.0-27-generic linux-hwe-5.11-headers-5.11.0-27
+  linux-image-5.11.0-27-generic linux-modules-5.11.0-27-generic
+  linux-modules-extra-5.11.0-27-generic
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  ca-certificates-java java-common openjdk-16-jre-headless
+Suggested packages:
+  default-jre openjdk-16-demo openjdk-16-source fonts-dejavu-extra
+  fonts-ipafont-gothic fonts-ipafont-mincho fonts-wqy-microhei
+  | fonts-wqy-zenhei
+The following NEW packages will be installed:
+  ca-certificates-java java-common openjdk-16-jdk-headless
+  openjdk-16-jre-headless
+0 upgraded, 4 newly installed, 0 to remove and 89 not upgraded.
+Need to get 306 MB of archives.
+After this operation, 477 MB of additional disk space will be used.
+Do you want to continue? [Y/n] 
+Get:1 http://us.archive.ubuntu.com/ubuntu focal/main amd64 java-common all 0.72 [6,816 B]
+Get:2 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 openjdk-16-jre-headless amd64 16.0.1+9-1~20.04 [45.5 MB]
+Get:3 http://us.archive.ubuntu.com/ubuntu focal/main amd64 ca-certificates-java all 20190405ubuntu1 [12.2 kB]
+Get:4 http://us.archive.ubuntu.com/ubuntu focal-updates/universe amd64 openjdk-16-jdk-headless amd64 16.0.1+9-1~20.04 [260 MB]
+Fetched 306 MB in 27min 18s (187 kB/s)                               
+Selecting previously unselected package java-common.
+(Reading database ... 199033 files and directories currently installed
+.)
+Preparing to unpack .../java-common_0.72_all.deb ...
+Unpacking java-common (0.72) ...
+Selecting previously unselected package openjdk-16-jre-headless:amd64.
+Preparing to unpack .../openjdk-16-jre-headless_16.0.1+9-1~20.04_amd64
+.deb ...
+Unpacking openjdk-16-jre-headless:amd64 (16.0.1+9-1~20.04) ...
+Selecting previously unselected package ca-certificates-java.
+Preparing to unpack .../ca-certificates-java_20190405ubuntu1_all.deb .
+..
+Unpacking ca-certificates-java (20190405ubuntu1) ...
+Selecting previously unselected package openjdk-16-jdk-headless:amd64.
+Preparing to unpack .../openjdk-16-jdk-headless_16.0.1+9-1~20.04_amd64
+.deb ...
+Unpacking openjdk-16-jdk-headless:amd64 (16.0.1+9-1~20.04) ...
+Setting up java-common (0.72) ...
+Setting up openjdk-16-jre-headless:amd64 (16.0.1+9-1~20.04) ...
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/java
+ to provide /usr/bin/java (java) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jpac
+kage to provide /usr/bin/jpackage (jpackage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/keyt
+ool to provide /usr/bin/keytool (keytool) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/rmid
+ to provide /usr/bin/rmid (rmid) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/rmir
+egistry to provide /usr/bin/rmiregistry (rmiregistry) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/lib/jexe
+c to provide /usr/bin/jexec (jexec) in auto mode
+Setting up ca-certificates-java (20190405ubuntu1) ...
+head: cannot open '/etc/ssl/certs/java/cacerts' for reading: No such f
+ile or directory
+Adding debian:TWCA_Global_Root_CA.pem
+Adding debian:Starfield_Class_2_CA.pem
+Adding debian:CFCA_EV_ROOT.pem
+Adding debian:Amazon_Root_CA_1.pem
+Adding debian:Trustwave_Global_Certification_Authority.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_EV_2009.pem
+Adding debian:QuoVadis_Root_CA_2.pem
+Adding debian:Sonera_Class_2_Root_CA.pem
+Adding debian:ACCVRAIZ1.pem
+Adding debian:AffirmTrust_Premium.pem
+Adding debian:AffirmTrust_Commercial.pem
+Adding debian:Go_Daddy_Class_2_CA.pem
+Adding debian:DigiCert_High_Assurance_EV_Root_CA.pem
+Adding debian:Certum_Trusted_Network_CA_2.pem
+Adding debian:QuoVadis_Root_CA_3.pem
+Adding debian:Izenpe.com.pem
+Adding debian:Atos_TrustedRoot_2011.pem
+Adding debian:Amazon_Root_CA_4.pem
+Adding debian:GTS_Root_R1.pem
+Adding debian:Certigna.pem
+Adding debian:AffirmTrust_Networking.pem
+Adding debian:COMODO_RSA_Certification_Authority.pem
+Adding debian:Starfield_Root_Certificate_Authority_-_G2.pem
+Adding debian:Actalis_Authentication_Root_CA.pem
+Adding debian:GTS_Root_R4.pem
+Adding debian:certSIGN_ROOT_CA.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G2.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R4.pem
+Adding debian:E-Tugra_Certification_Authority.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_2.pem
+Adding debian:Comodo_AAA_Services_root.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2
+015.pem
+Adding debian:AC_RAIZ_FNMT-RCM.pem
+Adding debian:SSL.com_Root_Certification_Authority_ECC.pem
+Adding debian:Chambers_of_Commerce_Root_-_2008.pem
+Adding debian:T-TeleSec_GlobalRoot_Class_3.pem
+Adding debian:IdenTrust_Public_Sector_Root_CA_1.pem
+Adding debian:GeoTrust_Primary_Certification_Authority_-_G2.pem
+Adding debian:QuoVadis_Root_CA_3_G3.pem
+Adding debian:Starfield_Services_Root_Certificate_Authority_-_G2.pem
+Adding debian:Security_Communication_Root_CA.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2011.
+pem
+Adding debian:Autoridad_de_Certificacion_Firmaprofesional_CIF_A6263406
+8.pem
+Adding debian:Staat_der_Nederlanden_EV_Root_CA.pem
+Adding debian:VeriSign_Universal_Root_Certification_Authority.pem
+Adding debian:DigiCert_Global_Root_G2.pem
+Adding debian:GlobalSign_Root_CA_-_R6.pem
+Adding debian:Microsoft_RSA_Root_Certificate_Authority_2017.pem
+Adding debian:AffirmTrust_Premium_ECC.pem
+Adding debian:Microsec_e-Szigno_Root_CA_2009.pem
+Adding debian:Trustis_FPS_Root_CA.pem
+Adding debian:SwissSign_Gold_CA_-_G2.pem
+Adding debian:OISTE_WISeKey_Global_Root_GB_CA.pem
+Adding debian:QuoVadis_Root_CA.pem
+Adding debian:emSign_Root_CA_-_G1.pem
+Adding debian:UCA_Global_G2_Root.pem
+Adding debian:DigiCert_Global_Root_G3.pem
+Adding debian:USERTrust_RSA_Certification_Authority.pem
+Adding debian:IdenTrust_Commercial_Root_CA_1.pem
+Adding debian:GlobalSign_Root_CA_-_R3.pem
+Adding debian:TWCA_Root_Certification_Authority.pem
+Adding debian:Cybertrust_Global_Root.pem
+Adding debian:DigiCert_Assured_ID_Root_G2.pem
+Adding debian:ssl-cert-snakeoil.pem
+Adding debian:CA_Disig_Root_R2.pem
+Adding debian:certSIGN_Root_CA_G2.pem
+Adding debian:GlobalSign_Root_CA.pem
+Adding debian:Trustwave_Global_ECC_P384_Certification_Authority.pem
+Adding debian:e-Szigno_Root_CA_2017.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_RSA_R2.pem
+Adding debian:TrustCor_ECA-1.pem
+Adding debian:TrustCor_RootCert_CA-2.pem
+Adding debian:SSL.com_EV_Root_Certification_Authority_ECC.pem
+Adding debian:ISRG_Root_X1.pem
+Adding debian:COMODO_ECC_Certification_Authority.pem
+Adding debian:SwissSign_Silver_CA_-_G2.pem
+Adding debian:Amazon_Root_CA_2.pem
+Adding debian:Entrust_Root_Certification_Authority_-_EC1.pem
+Adding debian:TeliaSonera_Root_CA_v1.pem
+Adding debian:QuoVadis_Root_CA_2_G3.pem
+Adding debian:DigiCert_Trusted_Root_G4.pem
+Adding debian:emSign_ECC_Root_CA_-_C3.pem
+Adding debian:EC-ACC.pem
+Adding debian:DigiCert_Assured_ID_Root_G3.pem
+Adding debian:Secure_Global_CA.pem
+Adding debian:Microsoft_ECC_Root_Certificate_Authority_2017.pem
+Adding debian:Certum_Trusted_Network_CA.pem
+Adding debian:Buypass_Class_3_Root_CA.pem
+Adding debian:TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.pem
+Adding debian:XRamp_Global_CA_Root.pem
+Adding debian:OISTE_WISeKey_Global_Root_GC_CA.pem
+Adding debian:DigiCert_Global_Root_CA.pem
+Adding debian:Staat_der_Nederlanden_Root_CA_-_G3.pem
+Adding debian:GDCA_TrustAUTH_R5_ROOT.pem
+Adding debian:SSL.com_Root_Certification_Authority_RSA.pem
+Adding debian:emSign_Root_CA_-_C1.pem
+Adding debian:Network_Solutions_Certificate_Authority.pem
+Adding debian:ePKI_Root_Certification_Authority.pem
+Adding debian:SecureTrust_CA.pem
+Adding debian:Buypass_Class_2_Root_CA.pem
+Adding debian:D-TRUST_Root_Class_3_CA_2_2009.pem
+Adding debian:GlobalSign_Root_CA_-_R2.pem
+Adding debian:Certigna_Root_CA.pem
+Adding debian:TrustCor_RootCert_CA-1.pem
+Adding debian:SZAFIR_ROOT_CA2.pem
+Adding debian:USERTrust_ECC_Certification_Authority.pem
+Adding debian:Amazon_Root_CA_3.pem
+Adding debian:NAVER_Global_Root_Certification_Authority.pem
+Adding debian:Baltimore_CyberTrust_Root.pem
+Adding debian:Security_Communication_RootCA2.pem
+Adding debian:Entrust_Root_Certification_Authority.pem
+Adding debian:Global_Chambersign_Root_-_2008.pem
+Adding debian:DigiCert_Assured_ID_Root_CA.pem
+Adding debian:GTS_Root_R2.pem
+Adding debian:UCA_Extended_Validation_Root.pem
+Adding debian:Entrust_Root_Certification_Authority_-_G4.pem
+Adding debian:Hongkong_Post_Root_CA_1.pem
+Adding debian:NetLock_Arany_=Class_Gold=_Főtanúsítvány.pem
+Adding debian:Go_Daddy_Root_Certificate_Authority_-_G2.pem
+Adding debian:COMODO_Certification_Authority.pem
+Adding debian:emSign_ECC_Root_CA_-_G3.pem
+Adding debian:SecureSign_RootCA11.pem
+Adding debian:GlobalSign_ECC_Root_CA_-_R5.pem
+Adding debian:Hellenic_Academic_and_Research_Institutions_RootCA_2015.
+pem
+Adding debian:Hongkong_Post_Root_CA_3.pem
+Adding debian:QuoVadis_Root_CA_1_G3.pem
+Adding debian:GTS_Root_R3.pem
+Adding debian:Trustwave_Global_ECC_P256_Certification_Authority.pem
+Adding debian:Entrust.net_Premium_2048_Secure_Server_CA.pem
+done.
+Setting up openjdk-16-jdk-headless:amd64 (16.0.1+9-1~20.04) ...
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jar 
+to provide /usr/bin/jar (jar) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jars
+igner to provide /usr/bin/jarsigner (jarsigner) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/java
+c to provide /usr/bin/javac (javac) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/java
+doc to provide /usr/bin/javadoc (javadoc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/java
+p to provide /usr/bin/javap (javap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jcmd
+ to provide /usr/bin/jcmd (jcmd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jdb 
+to provide /usr/bin/jdb (jdb) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jdep
+rscan to provide /usr/bin/jdeprscan (jdeprscan) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jdep
+s to provide /usr/bin/jdeps (jdeps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jfr 
+to provide /usr/bin/jfr (jfr) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jima
+ge to provide /usr/bin/jimage (jimage) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jinf
+o to provide /usr/bin/jinfo (jinfo) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jlin
+k to provide /usr/bin/jlink (jlink) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jmap
+ to provide /usr/bin/jmap (jmap) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jmod
+ to provide /usr/bin/jmod (jmod) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jps 
+to provide /usr/bin/jps (jps) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jrun
+script to provide /usr/bin/jrunscript (jrunscript) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jshe
+ll to provide /usr/bin/jshell (jshell) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jsta
+ck to provide /usr/bin/jstack (jstack) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jsta
+t to provide /usr/bin/jstat (jstat) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jsta
+td to provide /usr/bin/jstatd (jstatd) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/seri
+alver to provide /usr/bin/serialver (serialver) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jaot
+c to provide /usr/bin/jaotc (jaotc) in auto mode
+update-alternatives: using /usr/lib/jvm/java-16-openjdk-amd64/bin/jhsd
+b to provide /usr/bin/jhsdb (jhsdb) in auto mode
+Processing triggers for man-db (2.9.1-1) ...
+Processing triggers for ca-certificates (20210119~20.04.2) ...
+Updating certificates in /etc/ssl/certs...
+0 added, 0 removed; done.
+Running hooks in /etc/ca-certificates/update.d...
+
+done.
+done.
+sujal@ubuntu:~/Desktop$ javac first.java
+first.java:2: error: cannot find symbol
+public static void main(string args[]){
+                        ^
+  symbol:   class string
+  location: class first
+first.java:3: error: package system does not exist
+system.out.println("welcome to linux");
+      ^
+2 errors
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ javac first.java
+first.java:2: error: ';' expected
+public static void main (String[] args)
+                                       ^
+first.java:6: error: class, interface, enum, or record expected
+}
+^
+2 errors
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ javac first.java
+first.java:2: error: ';' expected
+public static void main (String[] args)
+                                       ^
+1 error
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ javac first.java
+first.java:3: error: ')' expected
+(system.out.println("welcome to linux");
+                                       ^
+first.java:3: error: not a statement
+(system.out.println("welcome to linux");
+^
+2 errors
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ javac first.java
+sujal@ubuntu:~/Desktop$ ./a.out
+sujal@ubuntu:~/Desktop$ history
+    1  pwd
+    2  ls
+    3  cd desktop
+    4  mkdir test1
+    5  cd test1
+    6  vi first.c
+    7  mkdir test1
+    8  mkdir file3
+    9  cd file3
+   10  vi first1.c
+   11  mkdir test1
+   12  ls
+   13  rmdir test1
+   14  ls
+   15  pwd
+   16  cd desktop
+   17  cd Desktop
+   18  pwd
+   19  mkdir test1
+   20  mkdir test2
+   21  cd test1
+   22  vi file1
+   23  clear
+   24  mkdir test8 test9 test10
+   25  clear
+   26  history
+   27  clear
+   28  ls
+   29  ls -R
+   30  ls -al
+   31  ls -a
+   32  cat > file1
+   33  cat file1
+   34  cat >file2
+   35  cat file1 file2 >newfile
+   36  cat newfile
+   37  rm Test
+   38  rm file1
+   39  ls
+   40  mv newfile /Desktop/Files/test3
+   41  mv newfile test2
+   42  cat test2
+   43  mv test2 test3
+   44  ls
+   45  mkdir movie
+   46  ls
+   47  man
+   48  man ls
+   49  man man
+   50  history
+   51  vi file3
+   52  cd file3
+   53  cd test1
+   54  mkdir test4
+   55  cd test4
+   56  cd
+   57  grep india test2
+   58  grep india file3
+   59  pwd
+   60  who
+   61  clear
+   62  cd Desktop
+   63  mkdir test
+   64  vi first.c
+   65  gcc first.c
+   66  sudo apt update
+   67  gcc -v
+   68  sudo apt -get install gcc
+   69  sudo apt-get install gcc
+   70  gcc -v
+   71  sudo apt-get install build-essential
+   72  clear
+   73  cd Desktop
+   74  mkdir test
+   75  vi first.c
+   76  gcc first.c
+   77  vi first.c
+   78  gcc first.c
+   79  vi first.c
+   80  gcc first.c
+   81  ./a.out
+   82  vi first.sh
+   83  sh first.sh
+   84  vi first.py
+   85  python3 first.py
+   86  vi first.java
+   87  javac first.c
+   88  sudo apt install openjdk-13-headless
+   89  javac first.java
+   90  sudo apt install openjdk-16-jdk-headless
+   91  javac first.java
+   92  vi first.java
+   93  javac first.java
+   94  vi first.java
+   95  javac first.java
+   96  vi first.java
+   97  javac first.java
+   98  vi first.java
+   99  javac first.java
+  100  ./a.out
+  101  history
+sujal@ubuntu:~/Desktop$ vi first.c
+sujal@ubuntu:~/Desktop$ vi first.java
+sujal@ubuntu:~/Desktop$ vi first.py
+sujal@ubuntu:~/Desktop$ 
+
